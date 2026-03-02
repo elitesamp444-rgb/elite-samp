@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite SAMP - Launcher</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="launcher">
+        <header class="header">
+            <div class="logo-container">
+                <h1 class="title">⚡ ELITE SAMP</h1>
+                <p class="subtitle">GTA RP Launcher</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="promotions-section">
+                <h2>📢 Promoções</h2>
+                <div id="promotions-list" class="promotions-list">
+                    <div class="promotion-item">
+                        <h3>Bônus de Entrada</h3>
+                        <p>Ganhe $50.000 ao entrar no servidor!</p>
+                    </div>
+                    <div class="promotion-item">
+                        <h3>Evento Especial</h3>
+                        <p>Participe do evento de corrida e ganhe prêmios!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="announcements-section">
+                <h2>📰 Avisos</h2>
+                <div id="announcements-list" class="announcements-list">
+                    <div class="announcement-item">
+                        <h3>Manutenção Programada</h3>
+                        <p>Servidor em manutenção amanhã às 22h</p>
+                    </div>
+                    <div class="announcement-item">
+                        <h3>Nova Atualização</h3>
+                        <p>Sistema de economia foi atualizado!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="login-section">
+                <h2>🎮 Entrar no Jogo</h2>
+                <form id="login-form" class="login-form">
+                    <input type="text" id="username" placeholder="Usuário" required class="input">
+                    <input type="password" id="password" placeholder="Senha" required class="input">
+                    <button type="submit" class="button button-primary">🚀 Conectar ao Servidor</button>
+                </form>
+            </section>
+
+            <section class="admin-section">
+                <button id="admin-toggle" class="button button-secondary">🔐 Painel Admin</button>
+            </section>
+        </main>
+
+        <div id="admin-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Painel de Administrador</h2>
+                
+                <div id="admin-login" class="admin-login">
+                    <h3>Login Admin</h3>
+                    <form id="admin-form" class="login-form">
+                        <input type="text" id="admin-username" placeholder="Username Admin" required class="input">
+                        <input type="password" id="admin-password" placeholder="Senha Admin" required class="input">
+                        <button type="submit" class="button button-primary">Login</button>
+                    </form>
+                </div>
+
+                <div id="admin-controls" class="admin-controls" style="display: none;">
+                    <h3>Gerenciar Promoções</h3>
+                    <form id="promotion-form" class="admin-form">
+                        <input type="text" id="promo-title" placeholder="Título da Promoção" required class="input">
+                        <textarea id="promo-description" placeholder="Descrição" required class="input"></textarea>
+                        <button type="submit" class="button button-primary">Adicionar Promoção</button>
+                    </form>
+
+                    <h3>Gerenciar Avisos</h3>
+                    <form id="announcement-form" class="admin-form">
+                        <input type="text" id="announcement-title" placeholder="Título do Aviso" required class="input">
+                        <textarea id="announcement-description" placeholder="Descrição" required class="input"></textarea>
+                        <button type="submit" class="button button-primary">Adicionar Aviso</button>
+                    </form>
+
+                    <h3>Gerenciar Servidores</h3>
+                    <form id="server-form" class="admin-form">
+                        <input type="text" id="server-name" placeholder="Nome do Servidor" required class="input">
+                        <input type="text" id="server-ip" placeholder="IP:Porta" required class="input">
+                        <button type="submit" class="button button-primary">Adicionar Servidor</button>
+                    </form>
+
+                    <button id="logout-btn" class="button button-danger">Logout</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2026 Elite SAMP. Todos os direitos reservados.</p>
+            <p>Version 1.0.0</p>
+        </footer>
+    </div>
+
+    <script src="js/launcher.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
