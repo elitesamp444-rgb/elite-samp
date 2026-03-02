@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Control Panel</h1>
+    </header>
+    <main>
+        <section id="promotions">
+            <h2>Manage Promotions</h2>
+            <form>
+                <label for="promotion">New Promotion:</label>
+                <input type="text" id="promotion" name="promotion" required>
+                <button type="submit">Add Promotion</button>
+            </form>
+            <ul id="promotion-list">
+                <!-- Existing promotions will be listed here -->
+            </ul>
+        </section>
+        <section id="announcements">
+            <h2>Manage Announcements</h2>
+            <form>
+                <label for="announcement">New Announcement:</label>
+                <input type="text" id="announcement" name="announcement" required>
+                <button type="submit">Add Announcement</button>
+            </form>
+            <ul id="announcement-list">
+                <!-- Existing announcements will be listed here -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Elite-SAMP. All rights reserved.</p>
+    </footer>
+</body>
+</html>
