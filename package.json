@@ -1,0 +1,1 @@
+{\n  "name": "samp-launcher",\n  "version": "1.0.0",\n  "description": "A Node.js project setup for SAMP launcher",\n  "main": "index.js",\n  "scripts": {\n    "start": "node index.js"\n  },\n  "author": "elitesamp444-rgb",\n  "license": "ISC"\n}
